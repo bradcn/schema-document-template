@@ -3,6 +3,7 @@ import Image from "next/image";
 import {
   GithubIcon,
   TwitterIcon,
+  HexagonIcon,
   MoveUpRightIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -53,6 +54,15 @@ export function Navbar() {
         </div>
       </div>
     </nav>
+  );
+}
+
+export function Logo() {
+  return (
+    <Link href="/" className="flex items-center gap-2.5">
+      <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
+      <h2 className="text-md font-bold">LISA</h2>
+    </Link>
   );
 }
 
