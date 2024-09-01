@@ -57,15 +57,6 @@ export function Navbar() {
   );
 }
 
-export function Logo() {
-  return (
-    <Link href="/" className="flex items-center gap-2.5">
-      <img src={DATA.siteLogo} alt="Logo" width={28} height={28}></img>
-      <h2 className="text-md font-bold">{DATA.siteName}</h2>
-    </Link>
-  );
-}
-
 export function NavMenu({ isSheet = false }) {
   return (
     <>
