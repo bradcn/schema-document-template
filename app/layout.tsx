@@ -8,9 +8,9 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {DATA.siteName},
-  metadataBase: new URL({DATA.siteUrl}),
-  description: {DATA.siteDescription},
+  title: DATA.siteName,
+  metadataBase: new URL(DATA.siteUrl),
+  description: DATA.siteDescription,
 };
 
 export default function RootLayout({
