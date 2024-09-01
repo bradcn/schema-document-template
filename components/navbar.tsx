@@ -2,7 +2,6 @@ import { ModeToggle } from "@/components/theme-toggle";
 import {
   GithubIcon,
   TwitterIcon,
-  HexagonIcon,
   MoveUpRightIcon,
 } from "lucide-react";
 import Link from "next/link";
@@ -12,30 +11,7 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-
-export const NAVLINKS = [
-  {
-    title: "Documentation",
-    href: `/docs${page_routes[0].href}`,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
-    title: "Examples",
-    href: "#",
-  },
-  {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "#",
-    external: true,
-  },
-];
+import { DATA, NAVLINKS } from "@/lib/site-config";
 
 export function Navbar() {
   return (
@@ -58,13 +34,13 @@ export function Navbar() {
             <Search />
             <div className="flex ml-2.5 sm:ml-0">
               <Link
-                href="https://github.com/nisabmohd/NexDocs"
+                href={DATA.githubUrl}
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                href={DATA.xUrl}
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",
@@ -84,8 +60,8 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
-      <h2 className="text-md font-bold">Nexdocs/template</h2>
+      <img src={DATA.siteLogo} className="w-7 h-7 text-muted-foreground fill-current"></img>
+      <h2 className="text-md font-bold">{DATA.siteName}</h2>
     </Link>
   );
 }
