@@ -1,4 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
+import Image from "next/image";
 import {
   GithubIcon,
   TwitterIcon,
@@ -59,7 +60,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <img src={DATA.siteLogo} alt="Logo" className="w-7 h-7 temuted-foreground fill-current"></img>
+      <Image src={DATA.siteLogo} alt="Logo" className="w-7 h-7 temuted-foreground fill-current" />
       <h2 className="text-md font-bold">{DATA.siteName}</h2>
     </Link>
   );
