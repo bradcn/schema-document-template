@@ -11,7 +11,31 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-import { DATA, MENU as NAVLINKS } from "@/lib/site-config";
+import { DATA } from "@/lib/site-config";
+
+export const MENU = [
+  {
+    title: "Documentation",
+    href: `/docs${page_routes[0].href}`,
+  },
+  {
+    title: "Blog",
+    href: "/blog",
+  },
+  {
+    title: "Examples",
+    href: "#",
+  },
+  {
+    title: "Guides",
+    href: "#",
+  },
+  {
+    title: "Community",
+    href: "#",
+    external: true,
+  },
+];
 
 export function Navbar() {
   return (
