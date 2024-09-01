@@ -11,9 +11,7 @@ import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
-import { DATA, MENU } from "@/lib/site-config";
-
-export const NAVLINKS = {MENU}
+import { DATA, MENU as NAVLINKS } from "@/lib/site-config";
 
 export function Navbar() {
   return (
