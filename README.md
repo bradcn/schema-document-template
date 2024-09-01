@@ -1,4 +1,4 @@
-## NexDocs - Documentation Template
+## schema - Documentation Template
 
 This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
 
@@ -22,7 +22,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `lib/site-config.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -54,7 +54,7 @@ Got it! Here's a way to present the features in a more structured and visually a
 Features
 ├── MDX supported
 ├── Nested pages support
-├── Blog section (New)
+├── Blog section
 ├── Syntax highlighting
 ├── Table of contents
 ├── Pagination
