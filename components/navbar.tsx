@@ -60,7 +60,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <Image src={DATA.siteLogo} alt="Logo" className="w-7 h-7 temuted-foreground fill-current" />
+      <Image src={DATA.siteLogo} alt="Logo" className="w-7 h-7" />
       <h2 className="text-md font-bold">{DATA.siteName}</h2>
     </Link>
   );
