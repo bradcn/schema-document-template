@@ -13,9 +13,7 @@ import { page_routes } from "@/lib/routes-config";
 import { SheetClose } from "@/components/ui/sheet";
 import { DATA, MENU } from "@/lib/site-config";
 
-export const NAVLINKS = {
-  {MENU}
-}
+export const NAVLINKS = {MENU}
 
 export function Navbar() {
   return (
