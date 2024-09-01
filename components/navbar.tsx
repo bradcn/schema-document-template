@@ -59,7 +59,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <img src={DATA.siteLogo} className="w-7 h-7 text-muted-foreground fill-current"></img>
+      <{DATA.siteLogo} className="w-7 h-7 text-muted-foreground fill-current" />
       <h2 className="text-md font-bold">{DATA.siteName}</h2>
     </Link>
   );
