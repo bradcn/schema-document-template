@@ -21,7 +21,6 @@ export function Navbar() {
           <SheetLeftbar />
           <div className="flex items-center gap-8">
             <div className="sm:flex hidden">
-              <Logo />
             </div>
             <div className="lg:flex hidden items-center gap-5 text-sm font-medium text-muted-foreground">
               <NavMenu />
