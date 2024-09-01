@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DATA } from "@/lib/site-config";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
@@ -7,10 +8,9 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NexDocx template",
-  metadataBase: new URL("https://nexdocs.vercel.app//"),
-  description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+  title: {DATA.siteName},
+  metadataBase: new URL({DATA.siteUrl}),
+  description: {DATA.siteDescription},
 };
 
 export default function RootLayout({
