@@ -12,7 +12,7 @@ import Search from "./search";
 import Anchor from "./anchor";
 import { SheetLeftbar } from "./leftbar";
 import { SheetClose } from "@/components/ui/sheet";
-import { DATA, MENU as NAVLINKS } from "@/lib/site-config";
+import { DATA, MENU as NAVLINKS } from "@/schema.config";
 
 export function Navbar() {
   return (
