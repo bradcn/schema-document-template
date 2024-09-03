@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DATA } from "@/lib/site-config";
+import { DATA } from "@/schema.config";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
