@@ -1,7 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { page_routes } from "@/lib/routes-config";
 import { DATA } from "@/schema.config";
-import { MoveUpRightIcon, TerminalIcon } from "lucide-react";
+import { MoveUpRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -29,9 +29,7 @@ export default function Home() {
           Get Stared
         </Link>
       </div>
-      <span className="flex flex-row items-center gap-2 text-zinc-400 text-md mt-7 -mb-12 max-[800px]:mb-12">
-        <TerminalIcon className="w-4 h-4 mr-1" /> {DATA.terminalCommand}
-      </span>
+      {/*<Terminal />*/}
     </div>
   );
 }
